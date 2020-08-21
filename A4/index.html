@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <title>Assignment 4</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Registration Webpage for an insurance company</h1>
+        <div class="form-group">
+            <label for="Name">First-Name</label>
+            <input type="text" class="form-control" id="formGroupexampleInput2" required>
+          </div>
+          <div class="form-group">
+            <label for="Name">Last-Name</label>
+            <input type="text" class="form-control" id="Lname" required>
+          </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="em2" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+          </div>
+          <label for="Gender">Gender</label><br>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+            <label class="custom-control-label" for="customRadioInline1">Male</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Female</label>
+          </div><br><br>
+          <div class="form-group">
+            <label for="DOB">DOB</label>
+            <input type="date" class="form-control"  id="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="Age">Age</label>
+            <input type="text" class="form-control" id="age" disabled>
+          </div>
+          <div class="form-group">
+            <label for="Age">Insurance Amount</label>
+            <input type="range" class="form-control" min=4000 max=30000 id="val" value="20000">
+          </div>
+          <p id="insuranceValue"></p>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required >
+            <label class="form-check-label" for="exampleCheck1">All Details Are Verified By Me</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

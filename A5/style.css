@@ -1,0 +1,47 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 3px solid blue;
+    position: relative;
+}
+.news-container{
+    width: 90%;
+    text-align: center;
+}
+h2{
+    position: absolute;
+    width: 100%;
+    top:10%;
+    text-align: center;
+}
+h5{
+    position: absolute;
+    width: 100%;
+    bottom:10%;
+    text-align: center;
+    width: 100%;
+    right: -30%;
+}
+.news-button{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 5px;
+}

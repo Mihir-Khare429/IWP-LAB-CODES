@@ -1,0 +1,58 @@
+<! DOCTYPE htmlL>
+<html>
+  <head>
+    <title>Registrations 2k20</title>
+    <style>
+    body{
+      background: #74ebd5;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1><strong>Hackathon Registrations 2k20</strong></h1><br>
+      <iframe width="800" height="200" src="https://www.youtube.com/embed/cpP-fCo8Dn4?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <form method="POST" action="#" enctype="multipart/form-data">
+      <input type="text" placeholder="Enter Your Name" name="Name"required>
+      <input type="text" placeholder="Enter Your Registration Number"       name="RegNo" pattern="[0-9]{2}[A-Z]{3}[0-9]{4}" required><br><br>
+      <input type="email" placeholder="Enter Your Email" name="Name"required>
+<input type="tel" placeholder="Enter Your Phone Number" name="phone" pattern="[0-9]{10}" required><br><br>
+      <input type="text" placeholder="Enter Your Team Name" name="TName" required>&nbsp&nbsp&nbsp&nbsp
+      <label for="Tsize">Team Size</label>&nbsp&nbsp
+      <input type="number" name="Tsize" width="400px" min=3 max=7 required><br><br>
+      <label for="year">Enter Year in College</label>&nbsp&nbsp
+      <select>
+        <option value="First">First Year</option>
+        <option value="Second">Second Year</option>
+        <option value="Third">Third Year</option>
+        <option value="Fourth">Fourth Year</option>
+      </select><br><br>
+      <label for="DOB">Enter DOB</label>&nbsp&nbsp&nbsp&nbsp
+      <input type="date" name="DOB" required><br><br>
+      <label for="gender">Gender</label>&nbsp&nbsp&nbsp&nbsp
+      <label for="gender">Male</label>&nbsp
+      <input type="radio" name="gender" value="male">&nbsp&nbsp&nbsp&nbsp
+      <label for="gender">Female</label>&nbsp
+      <input type="radio" name="gender" value="female">&nbsp&nbsp&nbsp&nbsp
+       <label for="gender">Others</label>&nbsp
+      <input type="radio" name="gender" value="Others"><br><br>
+      <label for="reqSkills">Select Your Skills</label><br><br>
+      <label for="skills">React</label>
+      <input type="checkbox" name="skill1" value="React">&nbsp&nbsp
+       <label for="skills">Angular</label>
+      <input type="checkbox" name="skill1" value="Angular">&nbsp&nbsp
+       <label for="skills">NodeJS</label>
+      <input type="checkbox" name="skill1" value="NodeJS">&nbsp&nbsp
+       <label for="skills">MongoDB</label>
+      <input type="checkbox" name="skill1" value="MongoDB">&nbsp&nbsp<br><br>
+      <label for="file">Your Avatar</label>&nbsp&nbsp
+      <input type="file" name="file"><br><br>
+      <textarea type="textarea" placeholder="Short Description About Your Team"></textarea><br><br>
+      <input type="submit">&nbsp&nbsp&nbsp
+      <input type="reset">
+    </form>
+   </center>
+  </body>
+</html>

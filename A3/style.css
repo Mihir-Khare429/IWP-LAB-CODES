@@ -1,0 +1,15 @@
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-auto-rows: minmax(100vh,auto);
+}
+.container:nth-child(1){
+    background-color: lightgray;
+    grid-column: 1/2;
+    text-align: center;
+}
+.container:nth-child(2){
+    background-color:lightgreen;
+    grid-column: 2/3;
+    text-align: center;
+}
