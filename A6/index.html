@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Lab Assignment 6</title>
+</head>
+<body>
+    <div class="container-button">
+        <button class="btn btn-success" id="green">
+            Green
+        </button>
+        <button class="btn btn-danger" id="red">
+            RED
+        </button>
+        <button class="btn btn-primary" id="blue">
+            BLUE
+        </button>
+    </div>
+    <div class="container-extract-text">
+        <div class="extract">
+            <div class="ul">
+                <ul class="list-extract">
+                    <li>Chandigarh</li>
+                    <li>Delhi</li>
+                    <li>Mumbai</li>
+                    <li>Bangalore</li>
+                    <li>Goa</li>
+                    <li>Gujrat</li>
+                    <li>Assam</li>
+                </ul>
+            </div>
+            <button class="btn btn-danger" id="ext-button">
+                Extract Text
+            </button>
+            <div class="extracted">
+                <p id="ext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores?</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="active-cyan-4 mb-4 search-1">
+                <input class="form-control" id="field" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            <button class="btn btn-primary" id="search-button">
+                    Search
+            </button>
+        </div>
+    </div>
+    <div class="container-function">
+        <div class="check-box">
+            <input type="checkbox" id="ch-box">
+            <button id="check" class="btn btn-danger">Submit</button>
+        </div>
+        <div class="distinguish" id="area">
+            <h2>Use This Area To Detect Left and Right Click</h2>
+        </div>
+        <div class="rm-style">
+            <h3 id="prp">Add or Remove css Style</h3>
+            <div class="but">
+                <button id="add" class="btn btn-primary">Add</button>
+                <button id="remove" class="btn btn-primary">Remove</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

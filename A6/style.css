@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container-button{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-extract-text{
+    height: 100vh;
+    width: 100%;
+    background-color: indigo;
+    color: orange;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.extract{
+    grid-column: 1/2;
+    font-size: 35px;
+}
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+ul li{
+    list-style: none;
+}
+.search{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.search-1{
+    width: 100%;
+    padding: 30px;
+}
+#search-button{
+    position: absolute;
+    top:60%;
+}
+.field{
+    width: 80%;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+}
+#green{
+    background-color: green;
+}
+#ext-button{
+    text-align: center;
+    margin-left: 370px;
+}
+.extracted{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.container-function{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+.container-function>div{
+    height: 33vh;
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+.check-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+#area{
+    text-align: center;
+    color: crimson;
+}
+#area>h2{
+    margin-top: 10%;
+}
+.rm-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rm-style>h3{
+    display: block;
+    width: 100%;
+    margin: 40px;
+}
+.rm-style>.but>button{
+    margin: 20px;
+}
+.test{
+    font-size:50px;
+    color: darkmagenta;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
