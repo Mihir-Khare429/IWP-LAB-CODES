@@ -37,6 +37,6 @@
         }
     }
     else{
-        echo "kfmnpkdnf";
+        echo "No Submit Request from Frontend Recieved!";
     }
 ?>
