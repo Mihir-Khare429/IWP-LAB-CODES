@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xslt"?>
+<words>
+    <word>
+        <name>Adamant</name>
+        <antonym>Flexible</antonym>
+        <synonym>Stubborn</synonym>
+    </word>
+    <word>
+        <name>Admonish</name>
+        <antonym>Approve</antonym>
+        <synonym>Counsel</synonym>
+    </word>
+    <word>
+        <name>Allay</name>
+        <antonym>Aggravate</antonym>
+        <synonym>Pacify</synonym>
+    </word>
+    <word>
+        <name>Abortive</name>
+        <antonym>Productive</antonym>
+        <synonym>Vain</synonym>
+    </word>
+    <word>
+        <name>Adjunct</name>
+        <antonym>Separated</antonym>
+        <synonym>Joined</synonym>
+    </word>
+</words>
