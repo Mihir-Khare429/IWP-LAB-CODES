@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href='select2/dist/css/select2.min.css' rel='stylesheet' type='text/css'>
+<link href='project.css' rel='stylesheet' type='text/css'>
+
+<!-- Optional JavaScript -->
+<script src="jquery-3.3.1.js"></script>
+<script src="jquery-ui.js"></script>
+<script src='select2/dist/js/select2.min.js' type='text/javascript'></script>
+<script>
+$(document).ready(function(){
+setInterval(function() {
+  var theColors = Array('#FF0000','#F51467','#EB1DCF','#572CCB','#337EB0','#399479','#5EB345','#CACA42','#FFA303','#FF6666');
+  var theColor = theColors[Math.floor(Math.random()*theColors.length)];
+  $(".btn1").animate({backgroundColor: theColor}, 800); }, 1000);
+});
+</script>
+</head>
+
+<body>
+<img src="welcome.png">
+<button class="btn1">Proceed To Website</button>
+<script>
+
+$(document).ready(function() {
+$("img").fadeIn(4000);
+	$(".btn1").fadeIn(3000);
+  $(".btn1").click(function(){
+    $("img").fadeOut(1500);
+    $(".btn1").fadeOut(1500);
+    window.setTimeout(function() {
+    window.location.href = "pg2.html";}, 2500);
+  });
+});
+
+</script>
+
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

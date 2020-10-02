@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<style>
+body{
+	background-image: url("back-img.jpg");
+}
+.jumbotron{
+  font-size: 50px;
+}
+table{
+text-align: center;
+}
+#txt12{
+font-size: 30px;
+font-family: satisfy;
+font-weight: bold;
+}
+.table{
+	 background-color: #50FF90;
+}
+.about-us ,.player-info{
+display: none;
+border-radius: 15px;
+background: #50FF90;
+padding: 20px; 
+height: auto; 
+} 
+
+
+</style>
+<script src="jquery-3.3.1.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+
+setInterval(function() {
+  var theColors = Array('#FF0000','#F51467','#EB1DCF','#572CCB','#337EB0','#399479','#5EB345','#CACA42','#FFA303','#FF6666');
+  var theColor = theColors[Math.floor(Math.random()*theColors.length)];
+  $(".cc").animate({backgroundColor: theColor}, 1300); }, 1500);
+
+	$("#bcd").click(function(){
+	alert("You are being redirected to Google News");
+    window.location.href = "https://www.google.com/search?q=cricket+news&tbm=nws";
+});
+	
+	$("#abc").click(function(){
+		$(".qwerty").fadeOut("slow");
+	$(".about-us").fadeIn("slow");
+});
+	
+	$("#cdf").click(function(){
+$(".qwerty").fadeOut("slow");
+	window.location.href = "pg3.html";
+});
+	
+	$("#def").click(function(){
+		window.location.href = "pg2.html";
+});
+
+});
+</script>
+</head>
+
+<body>
+	
+<div class="container-fluid">
+<div class="jumbotron" id="def">CRICKET MANIA</div>
+</div>
+<center>
+<div class="container-fluid row qwerty">
+
+<div class="container-fluid col-lg-3 col-md-3 col-sm-3">
+<table class="table table-striped table-bordered col-lg-3 col-md-3 col-sm-3 cc">
+<tr>
+<td><img src="about-us.png" height="200px" width="200px"></td>
+</tr>
+<tr>
+<td id="txt12">About Us</td>
+</tr>
+<tr>
+<td><button class="btn btn-primary" id="abc">Find Out More!</button></td>
+</tr>
+</table>
+</div>
+
+<div class="container-fluid col-lg-3 col-md-3 col-sm-3">
+<table class="table table-striped table-bordered col-lg-3 col-md-3 col-sm-3 cc">
+<tr>
+<td><img src="cric-news.jpg" height="200px" width="200px"></td>
+</tr>
+<tr>
+<td id="txt12">News</td>
+</tr>
+<tr>
+<td><button class="btn btn-primary" id="bcd">Find Out More!</button></td>
+</tr>
+</table>
+</div>
+
+<div class="container-fluid col-lg-3 col-md-3 col-sm-3">
+<table class="table table-striped table-bordered col-lg-3 col-md-3 col-sm-3 cc">
+<tr>
+<td><img src="pl-info.jpg" height="200px" width="200px"></td>
+</tr>
+<tr>
+<td id="txt12">Player Info</td>
+</tr>
+<tr>
+<td><button class="btn btn-primary" id="cdf">Find Out More!</button></td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<div class="row about-us container">
+CRICKETMANIA.com is designed specially to give information about latest cricket related news and all of the career detail of Indian Cricket players.
+<br><br>
+Topics Covered:
+<br>
+1. Jquery
+<br>
+2. AJAX
+<br>
+3. Bootstrap
+<br><br>
+&copy	Keshav Jain
+<br>
+&copy	Dhruv Mahipal
+</div>
+</center>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
