@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href='select2/dist/css/select2.min.css' rel='stylesheet' type='text/css'>
+
+<style>
+body{
+	background-image: url("back-img.jpg");
+}
+.jumbotron{
+  font-size: 50px;
+}
+.info{
+border-radius: 15px;
+background: #50FF90;
+padding: 20px; 
+height: auto; 
+}
+</style>
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+<div class="jumbotron" onclick="def()">CRICKET MANIA</div>
+</div>
+<center>
+	<div class="info container-fluid">
+<script src="jquery-3.3.1.js"></script>
+<select style='width: 200px;'>
+<option value='0' selected="selected">Select Player</option> 
+<option value='1'>AJINKYA RAHANE</option>
+<option value='2'>AXAR PATEL</option>
+<option value='3'>BHUVNESHWAR KUMAR</option>
+<option value='4'>CHETESHWAR PUJARA</option>
+<option value='5'>DINESH KARTHIK</option>
+<option value='6'>HARDIK PANDYA</option>
+<option value='7'>ISHANT SHARMA</option>
+<option value='8'>JASPRIT BUMRAH</option>
+<option value='9'>JAYANT YADAV</option>
+<option value='10'>KARUN NAIR</option>
+<option value='11'>KEDAR JADHAV</option>
+<option value='12'>KULDEEP YADAV</option>
+<option value='13'>LOKESH RAHUL</option>
+<option value='14'>MANISH PANDEY</option>
+<option value='15'>MS DHONI</option>
+<option value='16'>MURALI VIJAY</option>
+<option value='17'>PARTHIV PATEL</option>
+<option value='18'>RAVICHANDRAN ASHWIN</option>
+<option value='19'>RAVINDRA JADEJA</option>
+<option value='20'>ROHIT SHARMA</option>
+<option value='21'>SHIKHAR DHAWAN</option>
+<option value='22'>SURESH RAINA</option>
+<option value='23'>UMESH YADAV</option>
+<option value='24'>VIRAT KOHLI</option>
+<option value='25'>WRIDDHIMAN SAHA</option>
+<option value='26'>YUZVENDRA CHAHAL</option>
+
+</select>
+
+<input type='button' value='View Detail' id='but_read'>
+<br><br>
+<div id='result'></div>
+</div>
+
+<script>
+function def(){
+	window.location.href = "pg2.html";
+}
+$(document).ready(function() {
+
+// Initialize select2
+$("select").select2();
+
+// Read selected option
+$('#but_read').click(function(){
+var userid = $('select').val();
+$("#result").load("All_info.html #" + userid)
+
+});
+});
+
+</script>
+
+<!-- Optional JavaScript -->
+<script src='select2/dist/js/select2.min.js' type='text/javascript'></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap.min.js"></script>
+</center>
+</body>
+</html>
